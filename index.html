@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smite Spin Wheel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <div id="wheel-container">
+    <canvas id="wheel"></canvas>
+    <div id="pointer"></div>
+  </div>
+
+  <div id="control-panel">
+    <button id="spin-btn" class="action-btn">SPIN</button>
+    <div id="result-box" aria-live="polite" aria-atomic="true">Ready to spin!<br><span class="instruction-text">Or click wheel tiles to check comps!</span></div>
+  </div>
+</div>
+
+<div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="modal-content">
+    <h2 id="modal-title"></h2>
+    <div id="gods-container">
+    </div>
+    <div id="all-gods-text" style="display: none;">ALL GODS</div>
+    <div class="modal-buttons">
+      <button id="reroll-btn" class="action-btn">REROLL</button>
+      <button id="go-back-btn" class="action-btn">GO BACK</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
